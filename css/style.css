@@ -1,0 +1,171 @@
+body {
+    background: RGBA(0,0,0, .9);
+    margin: 0%;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.header::after {
+    content: '';
+    height: 85vh;
+    width: 100%;
+    background-image: url(../img/ets2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(5px);
+    -wedkit-filter: blur(5px);
+    transition: all 1000ms;
+}
+
+.header:hover::after {
+    filter: blur(0px);
+    -wedkit-filter: blur(0px);
+}
+
+.header:hover .header-content {
+    filter: blur(2px);
+    -wedkit-filter: blur(2px);
+    
+}
+
+.header-content {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 50%;
+    margin-top: 105px;
+    margin-left: -210px;
+    text-align: center;
+    width: 450px;
+    height: 350px;
+    transition: all 1000ms;
+}
+.header-content .logo{
+    height: 250px;
+    width: 250px;
+    
+}
+.title {
+    font-family: 'Trade Winds', cursive;
+    font-size: 2rem;
+
+}
+.text {
+    line-height: 1.7;
+    margin-top: 1rem;
+    
+}
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+    
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+    
+}
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    
+    
+}
+
+.text-center {
+    text-align: center;
+    margin: auto;
+}
+.bg-light {
+    background: #fff;
+    color: #000;
+}
+.bg-dark {
+    background: #B56D08;
+    color: #fff;
+    
+
+}
+.servicios{
+    padding: 2rem 0;
+}
+
+.footer {
+    padding: 2.2rem;
+}
+.footer {
+    margin: 0;
+}
+
+@media(max-width: 560px) {
+    .header::after {
+        height: 50vh;
+    }
+    .header-content {
+        top: 5%;
+        margin-top: 5px;
+        
+    }
+    
+    .header-content .logo {
+        height: 140px;
+        width: 140px;
+    }
+    .grid-3, .grid-2 {
+        grid-template-columns: 1fr;
+        
+    }
+    .servicios {
+        padding: 1rem 1rem;
+    }
+    
+    
+}
+@media(max-height: 500px) {
+    .header-content .txt {
+        display: none;
+        
+    }
+    .header-content {
+        top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
